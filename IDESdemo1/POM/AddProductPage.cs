@@ -8,6 +8,15 @@ namespace IDESdemo1.POM
 {
     internal class AddProductPage
     {
+        public string ProductNameErrorMessage;
+        public string ProductPriceErrorMessage;
+        public string ProductDateErrorMessage;
 
+        public AddProductPage(string productNameErrorMessage, string productPriceErrorMessage, string productDateErrorMessage)
+        {
+            ProductNameErrorMessage = productNameErrorMessage;
+            ProductPriceErrorMessage = productPriceErrorMessage;
+            ProductDateErrorMessage = productDateErrorMessage;
+        }
     }
 }
