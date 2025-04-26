@@ -1,0 +1,14 @@
+﻿login_page:
+  username_input:
+    type: "css"  # ou "xpath", "id", etc.
+    value: "#username"
+  password_input:
+    type: "css"
+    value: "#password"
+  submit_button:
+    type: "xpath"
+    value: "//button[@type='submit']"
+home_page:
+  welcome_message:
+    type: "css"
+    value: ".welcome-text"
