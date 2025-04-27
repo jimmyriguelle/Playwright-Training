@@ -12,7 +12,7 @@ namespace IDESdemo1.Hooks
     {
         // For additional details on Reqnroll hooks see https://go.reqnroll.net/doc-hooks
 
-        [BeforeScenario("@tag1")]
+        [BeforeScenario("@DB")]
         public void BeforeScenarioWithTag()
         {
             // Example of filtering hooks using tags. (in this case, this 'before scenario' hook will execute if the feature/scenario contains the tag '@tag1')
