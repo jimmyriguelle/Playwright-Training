@@ -33,9 +33,9 @@
     <Folder Include="API\" />
     <Folder Include="Menus\" />
     <Folder Include="LivingDoc\" />
-    <Folder Include="URLs\" />
-    <Folder Include="Products\" />
-    <Folder Include="Users\" />
+    <Folder Include="Archives\" />
+    <Folder Include="TestResults\" />
+    <Folder Include="Videos\" />
     <Folder Include="Pipelines\" />
     <Folder Include="UI\" />
     <Folder Include="Ressources\" />
