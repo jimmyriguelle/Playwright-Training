@@ -21,7 +21,7 @@ namespace IDESdemo1.StepDefinitions
 
             var page = await context.NewPageAsync();
             await page.GotoAsync("https://commitquality.com/");
-            await page.SetViewportSizeAsync(1920, 1080);
+            await page.SetViewportSizeAsync(1366, 768);
             await Task.Delay(2000);
             await page.GetByTestId("add-a-product-button").ClickAsync();
             await Task.Delay(2000);
@@ -61,7 +61,7 @@ namespace IDESdemo1.StepDefinitions
 
             var page = await context.NewPageAsync();
             await page.GotoAsync("https://commitquality.com/add-product");
-            await page.SetViewportSizeAsync(1920, 1080);
+            await page.SetViewportSizeAsync(1366, 768);
             await Task.Delay(2000);
             await page.GetByTestId("product-textbox").ClickAsync();
             await page.GetByTestId("product-textbox").FillAsync("Porsche");
