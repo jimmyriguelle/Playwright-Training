@@ -16,8 +16,18 @@ namespace IDESdemo1.StepDefinitions
             await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
                 Headless = false,
+                SlowMo = 1000,
             });
-            var context = await browser.NewContextAsync();
+            var context = await browser.NewContextAsync(new BrowserNewContextOptions
+            {
+                ViewportSize = new ViewportSize 
+                { 
+                    Width = 1920,
+                    Height = 1080,
+                },
+                DeviceScaleFactor = 1,
+                IsMobile = false,
+            });
 
             var page = await context.NewPageAsync();
             await page.GotoAsync("https://commitquality.com/");
@@ -55,6 +65,7 @@ namespace IDESdemo1.StepDefinitions
             using var playwright = await Playwright.CreateAsync();
             await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
+                Channel = "msedge",
                 Headless = false,
             });
             var context = await browser.NewContextAsync();
